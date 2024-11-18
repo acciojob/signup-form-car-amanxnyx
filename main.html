@@ -11,15 +11,40 @@
     <script type="text/javascript" src="./script.js">
 </script>
 	<form method = "post">
-		<input type = "text" class = "Name" id = "name" placeholder = "Name" required>
-		<input type = "email" class = "Email" id = "email" placeholder = "Email" required>
-		<input type = "radio" class = "Gender" id = "gender_m, gender_f" required>
-		<input type = "select" class = "Car Brands" id = "cars" placeholder = "--Please choose an option--" required>
-		<input type = "number" class = "Age" id = "age" placeholder = "Age" required>
-		<input type = "date" class = "DOB" id = "dob" required>
-		<input type = "tel" class = "Phone number" id = "tel" placeholder = "xxx-xxx-xxxx" required>
-		<input type = "password" class = "Passsword" id = "password" placeholder = "Password" required>
-		<input type = "checkbox" class = "I agree to the TOS" id = "tos" required>
+		<label for = "name">Name</label>
+		<input type = "text" id = "name" placeholder = "Name" required>
+
+		<label for = "email">Email</label>
+		<input type = "email" id = "email" placeholder = "Email" required>
+
+		<label for = "gender_m">Male</label>
+		<input type = "radio" name = "gender" id = "gender_m" required>
+
+		<label for = "gender_m">Female</label>
+		<input type = "radio"name = "gender" id = "gender_f" required>
+
+		<label for = "cars">Car Brands</label>
+		<select id = "cars" required>
+			<option value = "" disabled selected>--Please choose an option</option>
+			<!--Add your options here-->
+		</select>
+
+		<label for = "age">Age</label>
+		<input type = "number" id = "age" placeholder = "Age" required>
+
+		<label for = "date">DOB</label>
+		<input type = "date" id = "dob" required>
+
+		<label for = "phone number">Phone Number</label>
+		<input type = "tel" id = "tel" placeholder = "xxx-xxx-xxxx" required>
+
+		<label for = "password">Password</label>
+		<input type = "password" id = "password" placeholder = "Password" required>
+
+		<label for = "checkbox">I agree to the TOS</label>
+		<input type = "checkbox" id = "tos" required>
+
+		<label for = "submit">Submit</label>
 		<button type = "submit" class = "submit">
 </body>
 
